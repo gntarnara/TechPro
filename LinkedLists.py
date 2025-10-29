@@ -13,6 +13,11 @@ class LinkedList:
         new_node.next = self.head
         self.head = new_node
 
+    def removeHead(self):
+        temp = self.head
+        self.head = self.head.next
+        del temp
+
     def length(self):
         counter = 1
         current = self.head
